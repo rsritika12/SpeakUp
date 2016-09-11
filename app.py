@@ -15,12 +15,12 @@ def login():
 	return render_template ("login.html")
 
 @app.route("/register", methods = ["POST", "GET"])
-def login():
+def register():
 	return render_template ("register.html")
 
 
 @app.route("/socialmedia", methods = ["POST", "GET"])
-def login():
+def media():
 	return render_template ("media.html")
 
 
