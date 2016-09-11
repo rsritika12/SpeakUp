@@ -1,5 +1,5 @@
 from flask import Flask,request,url_for,redirect,render_template, flash, session
-import json, urllib2
+import json
 
 app=Flask(__name__)
 
@@ -13,3 +13,4 @@ def index():
 if __name__ == '__main__':
     app.debug = False
     app.run(host = '0.0.0.0', port=8023)
+
