@@ -10,6 +10,23 @@ app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 def index():
     return render_template ("index.html")
 
+@app.route("/login", methods = ["POST", "GET"])
+def login():
+	return render_template ("login.html")
+
+@app.route("/register", methods = ["POST", "GET"])
+def login():
+	return render_template ("register.html")
+
+
+@app.route("/socialmedia", methods = ["POST", "GET"])
+def login():
+	return render_template ("media.html")
+
+
+
+
+
 if __name__ == '__main__':
     app.debug = False
     app.run(host = '0.0.0.0', port=8023)
